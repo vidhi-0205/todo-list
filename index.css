@@ -1,0 +1,137 @@
+body{
+    background-image:linear-gradient(55deg,#8F87F1 0%,#C68EFD 33%,#E9A5F1 72%,#FED2E2 100%);
+    box-sizing:border-box;
+}
+.to-do-list{
+    background-color:#ffffff;
+    height:auto;
+    max-height:none;
+    overflow:hidden;
+    min-height:74vh;
+    max-width:700px;
+    width:90%;
+    margin:10px auto 20px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    outline:2px solid black;
+    border-radius:50px;
+    font-family:'Just Another Hand'
+
+}
+h2{
+    font-size:80px;
+    margin:10px;
+}
+#input-box{
+    border:none;
+    outline:none;
+    background-color:#D9D9D9;
+    height:50px;
+    width:70%;
+    border-radius:50px;
+    font-size:40px;
+    font-family:'Just Another Hand';
+}
+.input>button{
+    max-height:50px;
+    max-width:76px;
+    background-color:#8F87F1;
+    border-radius:50px;
+    cursor:pointer;
+    font-family:'Just Another Hand';
+    font-size:40px;
+}
+.input>button:hover{
+    background-color:#C68EFD;
+}
+ul li{
+    list-style-type: none;
+    font-size:40px;
+    padding:10px;
+    user-select: none;
+    cursor:pointer;
+    position:relative;
+
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    background-image: url('unchecked-removebg-preview.png');
+    height:28px;
+    width:28px;
+    margin:8px;
+    margin-bottom:0;
+    background-size:cover;
+    background-position: center;
+    top:12px;
+    left:100px;
+}
+ul li::before:hover{
+    outline:2px solid #8F87F1;
+}
+
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    line-height:40px;
+    border-radius:50%;
+}
+ul li span:hover{
+    background-color: #00000060;
+}
+ul li:hover{
+    background-color: #00000020;
+    border-radius:50px;
+}
+.checked::before{
+    content:'';
+    background-image:url('check-removebg-preview.png');
+    width:37px;
+    height:37px;
+    
+}
+.checked{
+    text-decoration:line-through;
+}
+button{
+    height:50px;
+    width:76px;
+    background-color:#8F87F1;
+    border-radius:50px;
+    cursor:pointer;
+    font-family:'Just Another Hand';
+    font-size:20px;
+    margin:auto;
+}
+button:hover{
+    background-color:#C68EFD;
+}
+.container{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  #input-box, ul li, .input > button {
+    font-size: 24px;
+    width: 100%; /* input full width on mobile */
+  }
+
+  .to-do-list {
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+

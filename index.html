@@ -1,0 +1,31 @@
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To Do List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="to-do-list">
+                <h2>TO-DO List</h2>
+                <div class="input">
+                    <input type="text" id="input-box" placeholder="add task"><button onclick="addTask()"">Add</button>
+                </div>
+                <ul class="list-container">
+                </ul>
+                <button onclick="clearTask()" style="display:none" id="clear">Remove Task</button>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
